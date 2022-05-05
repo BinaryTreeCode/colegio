@@ -1,4 +1,3 @@
-
 var biologia = {
     nombre: "Biología",
     bloque: "C",
@@ -8,7 +7,7 @@ var biologia = {
 var medioAmbiente = {
     nombre: "Medio Ambiente",
     bloque: "C",
-    avance: "taller de competencias",
+    avance: "proyecto",
     nota: "no hay niguna nota al respecto",
 };
 var quimica = {
@@ -21,10 +20,12 @@ var ciencias = [biologia, medioAmbiente, quimica];
 
 var libro = {
     nombre: "Libro cambridge",
-    bloque: "12",
-    avance: "inicio de la 12",
+    bloque: "13",
+    avance: "final de la 13",
     nota: "la profesora me a puesto actividades extra pero una era por " + 
-    "que la necetitaba para mejorar con lo de los numeros",
+    "que la necetitaba para mejorar con lo de los numeros, tambien tengo " +
+    "que explicarle la metologia con el libro poque solo estamos haciendo la parte virtual",
+
 };
 var actividades = {
     nombre: "Actividades extra",
@@ -78,15 +79,15 @@ var financieras = {
 };
 var fisica = {
     nombre: "Física",
-    bloque: "b",
-    avance: "inicio del TDC",
-    nota: "nesecito TDC, se habla con cesar",
+    bloque: "c",
+    avance: "taller",
+    nota: "ro hay ninguna nota al respecto",
 };
 var sitemas = {
     nombre: "Sistemas",
-    bloque: "D",
+    bloque: "A",
     avance: "inicio del TDC",
-    nota: "nesecito TDC",
+    nota: "ya termine sistemas de decimo",
 };
 var dibujo = {
     nombre: "Dibujo técnico",
@@ -113,8 +114,8 @@ var economicas = {
 var politicas = {
     nombre: "ciencias politicas",
     bloque: "C",
-    avance: "taller",
-    nota: "tengo que entregar el marco",
+    avance: "sustentación",
+    nota: "tengo que mejorar el proyecto",
 };
 var filosofia = {
     nombre: "filosofia",
@@ -143,6 +144,7 @@ dataBase.forEach(function(element) {
         //console.log( `${element.nombre} voy en el bloque ${element.bloque} falta ${element.avance} / Nota:${element.nota}`);
         app.innerHTML += `<p>En ${element.nombre} voy en el bloque ${element.bloque} falta ${element.avance} <br> Nota:${element.nota} </p>`;
     })});
+
 
 
 // eval (de texto para recorrer arays y objetos)
